@@ -1,0 +1,53 @@
+class User {
+ late int id;
+ late String? name;
+ late String? email;
+ late String? username;
+ late String? emailVerifiedAt;
+ late String? createdAt;
+ late String? updatedAt;
+ late int? type;
+ late int? status;
+ late String? insurance;
+ late String? percent;
+ late String? identity;
+ late String? marital;
+ late String? mobile;
+ late String? urgentName;
+ late String? urgentType;
+ late String? urgentMobile;
+ late String? startBalance;
+ late String? address;
+ late String? deviceToken;
+ late String? lat;
+ late String? lng;
+ late String? isOnline;
+ late String? token;
+
+  User.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
+    name = json['name'];
+    email = json['email'];
+    username = json['username'];
+    emailVerifiedAt = json['email_verified_at'];
+    createdAt = json['created_at'];
+    updatedAt = json['updated_at'];
+    type = json['type'];
+    status = json['status'];
+    insurance = json['insurance'];
+    percent = json['percent'];
+    identity = json['identity'];
+    marital = json['marital'];
+    mobile = json['mobile'];
+    urgentName = json['urgent_name'];
+    urgentType = json['urgent_type'];
+    urgentMobile = json['urgent_mobile'];
+    startBalance = json['start_balance'];
+    address = json['address'];
+    deviceToken = json['device_token'];
+    lat = json['lat'];
+    lng = json['lng'];
+    isOnline = json['is_online'];
+    token = json['token'];
+  }
+}
